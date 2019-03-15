@@ -20,7 +20,7 @@ Son todas las tecnincas que usamos para adaptar nuestras aplicaciones web a la m
 ![Off-canvas](assets/img/off-canvas.jpg)
 
 ## Viewport
-El viewport es el area visible de tu browser. No incluye el scrollbar
+El viewport es el area visible de tu browser. incluye el scrollbar
 ![Viewport](assets/img/viewport.jpg)
 
 ## Orientation
