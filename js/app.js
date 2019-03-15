@@ -1,7 +1,15 @@
 const hamburgerBox = document.querySelector('.hamburger-box'),
 sidenavOverlay = document.querySelector('.sidenav-overlay'),
 links = document.querySelectorAll('.link'),
+loading = document.querySelector('.loading'),
 ipad = window.matchMedia('screen and (max-width: 767.8px)');
+
+window.onload = function(){
+	loading.classList.add('loading-opacity');
+	setTimeout(()=>{
+		loading.classList.add('loading-none')
+	}, 500);
+}
 
 function validation(e) {  //const validation = e => {
 	if (e.matches) {
@@ -28,5 +36,5 @@ function addActive(){
 }
 function remove(){
 	hamburgerBox.classList.remove('active');
-	document.body.classList.remove('body-hideen');
+	document.body.classList.remove('body-hidden');
 }
